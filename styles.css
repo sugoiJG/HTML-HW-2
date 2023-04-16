@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: rgb(255, 236, 239);
+}
+
+header {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.picture {
+    grid-row: 2;
+    max-width: 100%;
+    height: auto;
+    background-image: url('goodvibes.jpeg');
+    background-size: cover;
+}
+
+
+.paragraph {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.list1, .list2 {
+    grid-row: 3;
+}
+
+.image1, .image2, .image3 {
+    grid-row: 4;
+}
+
+.image4, .image5, .image6 {
+    grid-row: 5;
+}
+
+.image1, .image2, .image3, .image4, .image5, .image6 {
+    background-size: cover;
+    height: 100px;
+}
+
+.image1 { background-image: url('spirituality.jpeg'); }
+.image2 { background-image: url('yoga.jpeg'); }
+.image3 { background-image: url('ayurvedicherbs.webp'); }
+.image4 { background-image: url('best-healing-plants-1653511377.jpeg'); }
+.image5 { background-image: url('personaldevelopmentbooks.jpeg'); }
+.image6 { background-image: url('travel.jpeg'); }
+
+footer {
+background-color: #ccc;
+padding: 1rem;
+text-align: center;
+}
